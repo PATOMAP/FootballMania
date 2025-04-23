@@ -1,0 +1,23 @@
+{
+  "Version": 1,
+  "Hash": "G8e6bmUfvWFD8DBhInBL3ExYhxEM0gdC7EDBGHgieeI=",
+  "Source": "FootballMainia.Server",
+  "BasePath": "_content/FootballMainia.Server",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "D:\\FootballMainia\\footballmainia.client\\footballmainia.client.esproj",
+      "Version": 2,
+      "Source": "footballmainia.client",
+      "GetPublishAssetsTargets": "GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained"
+    }
+  ],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

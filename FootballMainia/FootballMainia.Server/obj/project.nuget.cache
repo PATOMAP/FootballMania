@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "h8htHufeZ70=",
+  "success": true,
+  "projectFilePath": "D:\\FootballMainia\\FootballMainia.Server\\FootballMainia.Server.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\pawel\\.nuget\\packages\\microsoft.aspnetcore.spaproxy\\8.0.15\\microsoft.aspnetcore.spaproxy.8.0.15.nupkg.sha512"
+  ],
+  "logs": []
+}

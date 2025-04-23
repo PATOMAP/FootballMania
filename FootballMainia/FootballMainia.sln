@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35208.52
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FootballMainia.Server", "FootballMainia.Server\FootballMainia.Server.csproj", "{F41DFCDA-EBC7-4F89-9CEC-7A93D720595A}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "footballmainia.client", "footballmainia.client\footballmainia.client.esproj", "{73B9DDB1-DEC0-4B40-AB23-09F41964355A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F41DFCDA-EBC7-4F89-9CEC-7A93D720595A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F41DFCDA-EBC7-4F89-9CEC-7A93D720595A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F41DFCDA-EBC7-4F89-9CEC-7A93D720595A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F41DFCDA-EBC7-4F89-9CEC-7A93D720595A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73B9DDB1-DEC0-4B40-AB23-09F41964355A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73B9DDB1-DEC0-4B40-AB23-09F41964355A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73B9DDB1-DEC0-4B40-AB23-09F41964355A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{73B9DDB1-DEC0-4B40-AB23-09F41964355A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73B9DDB1-DEC0-4B40-AB23-09F41964355A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73B9DDB1-DEC0-4B40-AB23-09F41964355A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BDD9843C-066F-4C0C-B985-A1ABCBB3C9F8}
+	EndGlobalSection
+EndGlobal

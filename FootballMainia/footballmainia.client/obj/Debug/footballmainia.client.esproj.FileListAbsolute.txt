@@ -1,0 +1,2 @@
+D:\c#\Footballwebsite\MainProject\FootballMainia\footballmainia.client\obj\Debug\footballmainia.client.esproj.CoreCompileInputs.cache
+D:\FootballMainia\footballmainia.client\obj\Debug\footballmainia.client.esproj.CoreCompileInputs.cache
