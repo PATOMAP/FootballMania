@@ -3,7 +3,7 @@
 "ServerUrl": "https://localhost:5173",
 "RedirectUrl": "",
 "LaunchCommand": "npm run dev",
-"WorkingDirectory": "D:\\FootballMainia\\FootballMainia.Server\\..\\footballmainia.client",
+"WorkingDirectory": "D:\\ProjectFootball\\FootballMainia\\FootballMainia.Server\\..\\footballmainia.client",
 "MaxTimeoutInSeconds": "120",
 "KeepRunning": "false"
 }

@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "Hash": "G8e6bmUfvWFD8DBhInBL3ExYhxEM0gdC7EDBGHgieeI=",
+  "Hash": "+GyO+BA8dYHuEojIcalf/fgL6yTXA9MqveurRnRip1Q=",
   "Source": "FootballMainia.Server",
   "BasePath": "_content/FootballMainia.Server",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "D:\\FootballMainia\\footballmainia.client\\footballmainia.client.esproj",
+      "Identity": "D:\\ProjectFootball\\FootballMainia\\footballmainia.client\\footballmainia.client.esproj",
       "Version": 2,
       "Source": "footballmainia.client",
       "GetPublishAssetsTargets": "GetCurrentProjectPublishStaticWebAssetItems",
