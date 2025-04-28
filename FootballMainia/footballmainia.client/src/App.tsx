@@ -1,55 +1,72 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-interface Forecast {
-    date: string;
-    temperatureC: number;
-    temperatureF: number;
-    summary: string;
+
+interface PlayersItem {
+    player_id: number;
+    number: number;
+    full_name: string;
+    position: string;
+    age: number;
+    nationality: string;
+    current_club: string;
+    previous_club: string;
+    market_value: string;
+    height: string;
 }
 
 function App() {
-    const [forecasts, setForecasts] = useState<Forecast[]>();
+    const [players, setPlayers] = useState<PlayersItem[]>();
 
     useEffect(() => {
-        populateWeatherData();
+        populatePlayersData();
     }, []);
 
-    const contents = forecasts === undefined
-        ? <p><em>Loading... Please refresh once the ASP.NET backend has started. See <a href="https://aka.ms/jspsintegrationreact">https://aka.ms/jspsintegrationreact</a> for more details.</em></p>
+    const contents = players === undefined
+        ? <p><em>Loading... Please refresh once the ASP.NET backend has started.</em></p>
         : <table className="table table-striped" aria-labelledby="tableLabel">
             <thead>
                 <tr>
-                    <th>Date</th>
-                    <th>Temp. (C)</th>
-                    <th>Temp. (F)</th>
-                    <th>Summary</th>
+                    <th>#</th>
+                    <th>Full Name</th>
+                    <th>Position</th>
+                    <th>Age</th>
+                    <th>Nationality</th>
+                    <th>Current Club</th>
+                    <th>Previous Club</th>
+                    <th>Market Value</th>
+                    <th>Height</th>
                 </tr>
             </thead>
             <tbody>
-                {forecasts.map(forecast =>
-                    <tr key={forecast.date}>
-                        <td>{forecast.date}</td>
-                        <td>{forecast.temperatureC}</td>
-                        <td>{forecast.temperatureF}</td>
-                        <td>{forecast.summary}</td>
+                {players.map(player => (
+                    <tr key={player.player_id}>
+                        <td>{player.number}</td>
+                        <td>{player.full_name}</td>
+                        <td>{player.position}</td>
+                        <td>{player.age}</td>
+                        <td>{player.nationality}</td>
+                        <td>{player.current_club}</td>
+                        <td>{player.previous_club}</td>
+                        <td>{player.market_value}</td>
+                        <td>{player.height}</td>
                     </tr>
-                )}
+                ))}
             </tbody>
         </table>;
 
     return (
         <div>
-            <h1 id="tableLabel">Weather forecast</h1>
-            <p>This component demonstrates fetching data from the server.</p>
+            <h1 id="tableLabel">Players List</h1>
+            <p>This component demonstrates fetching players data from the server.</p>
             {contents}
         </div>
     );
 
-    async function populateWeatherData() {
-        const response = await fetch('weatherforecast');
-        const data = await response.json();
-        setForecasts(data);
+    async function populatePlayersData() {
+        const response = await fetch('playerslist'); // <-- tutaj zmieñ na twój backend endpoint!
+        const data: PlayersItem[] = await response.json();
+        setPlayers(data);
     }
 }
 

@@ -47,7 +47,7 @@ export default defineConfig({
                 target,
                 secure: false
             },
-            '^/item': {
+            '^/playerslist': {
                 target,
                 secure: false
             }
