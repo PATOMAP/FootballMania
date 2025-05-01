@@ -5,12 +5,12 @@ import Home from './Components/Home'
 function App() {
    
     return (
-        <Router>          
-            <main className="p-4">
-                <NavbarComponent />
+        <Router>
+            <NavbarComponent />
+            <main className="mt-0">
                 <Routes>
                     <Route path="/" element={<Home />} />
-                    <Route path="/listPlayers" element={<ListPlayers/>} />
+                    <Route path="/listPlayers" element={<ListPlayers />} />
                 </Routes>
             </main>
         </Router>
@@ -18,3 +18,12 @@ function App() {
 }
 
 export default App;
+//<Router>
+//    <main className="mt-0">
+//        <NavbarComponent />
+//        <Routes>
+//            <Route path="/" element={<Home />} />
+//            <Route path="/listPlayers" element={<ListPlayers />} />
+//        </Routes>
+//    </main>
+//</Router>
