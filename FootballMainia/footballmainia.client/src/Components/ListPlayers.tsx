@@ -1,28 +1,54 @@
 import { useEffect, useState } from 'react';
 import '../App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
-interface PlayersItem {
-    player_id: number;
-    number: number;
-    full_name: string;
-    position: string;
-    age: number;
-    nationality: string;
-    current_club: string;
-    previous_club: string;
-    market_value: string;
-    height: string;
-}
+import ElementsToSerach from './ListPlayersComponents/ElementsToSerach'
+import PlayersItem from './Interfaces/PlayersItem';
+import { FilterPlayers, InformationType } from './Interfaces/FilterPlayers';
 
 function ListPlayers() {
     const [players, setPlayers] = useState<PlayersItem[]>();
+    const [playersInTable, setPlayersInTable] = useState<PlayersItem[]>();
+    const [information, setInformation] = useState<InformationType>({
+        position: [],
+        club: [],
+});
+    const [playersFilter, setPlayersFilter] = useState<FilterPlayers>({
+        name: '',
+        club: '',
+        position: ''
+    }
+    );
+
+    function filterPlayers() {
+        if (players !== undefined) {
+            setPlayersInTable(players.filter((p, _) => ((playersFilter.club === '' ? p : p.current_club === playersFilter.club) && (playersFilter.position === '' ? p : p.position === playersFilter.position))));
+            console.log(playersFilter);
+        }
+
+    }
+    function addClubAndPositionToFilter() {
+        if (players !== undefined) {
+            const positions = [...new Set(players.map(player => player.position))];
+            const clubs = [...new Set(players.map(player => player.current_club))];
+            setInformation({ position: positions, club: clubs });
+        }
+    }
+
 
     useEffect(() => {
         populatePlayersData();
     }, []);
+    useEffect(() => {
+        addClubAndPositionToFilter();
+    }, [players]);
+    useEffect(() => {
+        filterPlayers();
+    }, [playersFilter]);
 
-    const contents = players === undefined
+    const contents1 = players === undefined ? <div></div> : <ElementsToSerach setPlayers={setPlayersFilter} InformationPlayers={information} />;
+
+
+    const contents = players === undefined || playersInTable === undefined
         ? <p><em>Loading... Please refresh once the ASP.NET backend has started.</em></p>
         : <table className="table table-striped" aria-labelledby="tableLabel">
             <thead>
@@ -39,7 +65,7 @@ function ListPlayers() {
                 </tr>
             </thead>
             <tbody>
-                {players.map(player => (
+                {playersInTable.map(player => (
                     <tr key={player.player_id}>
                         <td>{player.number}</td>
                         <td>{player.full_name}</td>
@@ -57,16 +83,22 @@ function ListPlayers() {
 
     return (
         <div>
-            <h1 id="tableLabel">Players List</h1>
-            <p>This component demonstrates fetching players data from the server.</p>
-            {contents}
+            {contents1 }
+            <div>
+                <h1 id="tableLabel">Players List</h1>
+                <p>This component demonstrates fetching players data from the server.</p>
+                {contents}
+            </div>
         </div>
+
     );
 
     async function populatePlayersData() {
         const response = await fetch('playerslist'); // <-- tutaj zmieñ na twój backend endpoint!
         const data: PlayersItem[] = await response.json();
+        setPlayersInTable(data);
         setPlayers(data);
+        
     }
 }
 
