@@ -5,9 +5,10 @@ type ItemsType = {
 
     InformationPlayers: InformationType;
     setPlayers: React.Dispatch<React.SetStateAction<FilterPlayers>>;
+    playersFilter: FilterPlayers;
 
 };
-const ElementsToSerach: React.FC<ItemsType>=({setPlayers,InformationPlayers})=> {
+const ElementsToSerach: React.FC<ItemsType> = ({ setPlayers, InformationPlayers, playersFilter }) => {
     const [selectedOption, setSelectedOption] = useState<string>();
     function SelectFromFirstDropdown(e: React.ChangeEvent<HTMLSelectElement>) {
         setSelectedOption(e.currentTarget.value.toString());
@@ -33,11 +34,14 @@ const ElementsToSerach: React.FC<ItemsType>=({setPlayers,InformationPlayers})=> 
                         type="text"
                         placeholder="Name"
                         className="border rounded px-2 py-1 w-full"
+                        value={playersFilter.name}
+                        onChange={(e) => setPlayers(c => ({ ...c, name: String(e.target.value) }))}
                     />
                 )}
 
                 {selectedOption === 'position' && (
                     <select className="border rounded px-2 py-1 w-full"
+                        value={playersFilter.position}
                         onChange={(e) => setPlayers(c => ({ ...c, position: String(e.target.value)}))}>
                         <option value="">Wybierz pozycje</option>
                         {InformationPlayers.position.map((pos, index) => (
@@ -50,6 +54,7 @@ const ElementsToSerach: React.FC<ItemsType>=({setPlayers,InformationPlayers})=> 
 
                 {selectedOption === 'club' && (
                     <select className="border rounded px-2 py-1 w-full"
+                        value={playersFilter.club}
                         onChange={(e) => setPlayers(c => ({ ...c, club: String(e.target.value)}))}>
                         <option value="">Wybierz klub</option>
                         {InformationPlayers.club.map((club, index) => (

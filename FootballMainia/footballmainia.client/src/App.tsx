@@ -18,12 +18,3 @@ function App() {
 }
 
 export default App;
-//<Router>
-//    <main className="mt-0">
-//        <NavbarComponent />
-//        <Routes>
-//            <Route path="/" element={<Home />} />
-//            <Route path="/listPlayers" element={<ListPlayers />} />
-//        </Routes>
-//    </main>
-//</Router>
