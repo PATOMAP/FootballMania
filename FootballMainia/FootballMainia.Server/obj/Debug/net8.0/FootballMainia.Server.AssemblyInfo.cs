@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FootballMainia.Server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cb43f573d0b8cc385764e3013cb9005859703320")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+37601f0a9c8297623e67f5184df6a704027b4d20")]
 [assembly: System.Reflection.AssemblyProductAttribute("FootballMainia.Server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FootballMainia.Server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

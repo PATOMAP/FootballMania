@@ -21,7 +21,8 @@ function ListPlayers() {
         position: ''
     }
     );
-    const [editingRowId, setEditingRowId] = useState<number | null>(null);
+    const [editingRowId, setEditingRowId] = useState<number | null>(null);//editingRow
+    const [editingPlayerData, setEditingPlayerData] = useState<PlayersItem | null>(null);//actualPlayerEditing
     function filterPlayers() {
         if (players !== undefined) {
             setPlayersInTable(players.filter((p, _) => ((playersFilter.club === '' ? p : p.current_club === playersFilter.club)
@@ -30,6 +31,38 @@ function ListPlayers() {
         }
 
     }
+    function toggleEdit(rowId: number) {
+        if (editingRowId === rowId) {
+    
+            if (editingPlayerData) {
+                setPlayersInTable(prev =>
+                    prev?.map(p => p.player_id === rowId ? editingPlayerData : p)
+                );
+                setPlayers(prev =>
+                    prev?.map(p => p.player_id === rowId ? editingPlayerData : p)
+                );
+            }
+             if (editingPlayerData !== null)
+             savePlayer(editingPlayerData);
+        
+            setEditingRowId(null);
+            setEditingPlayerData(null);
+
+           
+        }
+        else {
+            const playerToEdit = playersInTable?.find(p => p.player_id === rowId);
+            if (playerToEdit) {
+                setEditingRowId(rowId);
+                setEditingPlayerData({ ...playerToEdit });
+            }
+        }
+    }
+    function handleFieldChange(field: keyof PlayersItem, value: string | number) {
+        setEditingPlayerData(p =>
+            p ? { ...p, [field]: value } : null
+        );
+    }
     function addClubAndPositionToFilter() {
         if (players !== undefined) {
             const positions = [...new Set(players.map(player => player.position))];
@@ -37,9 +70,7 @@ function ListPlayers() {
             setInformation({ position: positions, club: clubs });
         }
     }
-    function toggleEdit(rowId: number) {
-        setEditingRowId(prev => (prev === rowId ? null : rowId));
-    }
+
 
     useEffect(() => {
         populatePlayersData();
@@ -76,70 +107,99 @@ function ListPlayers() {
                     <tr key={player.player_id}>
                         <td>
                             {editingRowId === player.player_id ? (
-                                <input type="number" value={player.number} />
+                                <input
+                                    type="number"
+                                    value={editingPlayerData?.number || ''}
+                                    onChange={(e) => handleFieldChange('number', +e.target.value)}
+                                />
                             ) : (
-                                    player.number
+                                player.number
                             )}
                         </td>
                         <td>
                             {editingRowId === player.player_id ? (
-                                <input type="text" value={player.full_name} />
+                                <input
+                                    type="text"
+                                    value={editingPlayerData?.full_name || ''}
+                                    onChange={(e) => handleFieldChange('full_name', e.target.value)}
+                                />
                             ) : (
                                 player.full_name
                             )}
                         </td>
-
                         <td>
                             {editingRowId === player.player_id ? (
-                                <input type="text" value={player.position} />
+                                <input
+                                    type="text"
+                                    value={editingPlayerData?.position || ''}
+                                    onChange={(e) => handleFieldChange('position', e.target.value)}
+                                />
                             ) : (
                                 player.position
                             )}
                         </td>
-
                         <td>
                             {editingRowId === player.player_id ? (
-                                <input type="number" value={player.age} />
+                                <input
+                                    type="number"
+                                    value={editingPlayerData?.age || ''}
+                                    onChange={(e) => handleFieldChange('age', +e.target.value)}
+                                />
                             ) : (
                                 player.age
                             )}
                         </td>
-
                         <td>
                             {editingRowId === player.player_id ? (
-                                <input type="text" value={player.nationality} />
+                                <input
+                                    type="text"
+                                    value={editingPlayerData?.nationality || ''}
+                                    onChange={(e) => handleFieldChange('nationality', e.target.value)}
+                                />
                             ) : (
                                 player.nationality
                             )}
                         </td>
-
                         <td>
                             {editingRowId === player.player_id ? (
-                                <input type="text" value={player.current_club} />
+                                <input
+                                    type="text"
+                                    value={editingPlayerData?.current_club || ''}
+                                    onChange={(e) => handleFieldChange('current_club', e.target.value)}
+                                />
                             ) : (
                                 player.current_club
                             )}
                         </td>
-
                         <td>
                             {editingRowId === player.player_id ? (
-                                <input type="text" value={player.previous_club} />
+                                <input
+                                    type="text"
+                                    value={editingPlayerData?.previous_club || ''}
+                                    onChange={(e) => handleFieldChange('previous_club', e.target.value)}
+                                />
                             ) : (
                                 player.previous_club
                             )}
                         </td>
-
                         <td>
                             {editingRowId === player.player_id ? (
-                                <input type="text" value={player.market_value} />
+                                <input
+                                    type="text"
+                                    value={editingPlayerData?.market_value || ''}
+                                    onChange={(e) => handleFieldChange('market_value', e.target.value)}
+                                />
                             ) : (
                                 player.market_value
                             )}
                         </td>
-
                         <td>
                             {editingRowId === player.player_id ? (
-                                <input type="text" value={player.height} />
+                                <input
+                                    type="text"
+                                    value={editingPlayerData?.height || ''}
+                                    onChange={(e) => handleFieldChange('height', e.target.value)}
+                                />
                             ) : (
                                 player.height
                             )}
@@ -153,7 +213,7 @@ function ListPlayers() {
                                     <Thrash />
                                 </Button>
                             </div>
-                    </td>
+                        </td>
                     </tr>
                 ))}
             </tbody>
@@ -177,6 +237,23 @@ function ListPlayers() {
         setPlayersInTable(data);
         setPlayers(data);
         
+    }
+    async function savePlayer(player: PlayersItem) {
+        const response = await fetch('playerslist/savePlayer', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(player),
+        });
+
+        const resultText = await response.text();
+
+        if (!response.ok) {
+            console.error("B³¹d zapisu:", resultText);
+        } else {
+            console.log("Sukces:", resultText);
+        }
     }
 }
 

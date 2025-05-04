@@ -21,5 +21,16 @@ namespace FootballMainia.Server.Controllers
             var players = await _db.Players.ToListAsync();
             return players;
         }
+        [HttpPost("savePlayer")]
+        public IActionResult SavePlayer([FromBody] PlayersItem player)
+        {
+            if (player == null)
+                return BadRequest("Brak danych");
+
+            _db.Players.Update(player);//aktualizacja danych
+            _db.SaveChanges();//zapisanie informacji w bazie danych
+
+            return Ok("Zapisano pomyślnie");
+        }
     }
 }
