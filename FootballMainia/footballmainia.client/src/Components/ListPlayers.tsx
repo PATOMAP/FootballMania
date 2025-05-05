@@ -7,7 +7,7 @@ import { FilterPlayers, InformationType } from './Interfaces/FilterPlayers';
 import { Button } from 'react-bootstrap';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import { Edit,Thrash }  from '../icons/EditIcons'
-
+import AddItemPlayer from './ListPlayersComponents/AddItemToPlayer'
 function ListPlayers() {
     const [players, setPlayers] = useState<PlayersItem[]>();
     const [playersInTable, setPlayersInTable] = useState<PlayersItem[]>();
@@ -82,7 +82,7 @@ function ListPlayers() {
         filterPlayers();
     }, [playersFilter]);
 
-    const contents1 = players === undefined ? <div></div> : <ElementsToSerach setPlayers={setPlayersFilter} InformationPlayers={information} playersFilter={playersFilter} />;
+    const contents1 = players === undefined ? <div></div> : <div><AddItemPlayer source={information}/><ElementsToSerach setPlayers={setPlayersFilter} InformationPlayers={information} playersFilter={playersFilter} /></div>;
 
 
     const contents = players === undefined || playersInTable === undefined
