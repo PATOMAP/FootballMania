@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import '../App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ElementsToSerach from './ListPlayersComponents/ElementsToSerach'
 import PlayersItem from './Interfaces/PlayersItem';
@@ -8,6 +7,7 @@ import { Button } from 'react-bootstrap';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import { Edit,Thrash }  from '../icons/EditIcons'
 import AddItemPlayer from './ListPlayersComponents/AddItemToPlayer'
+import '../styleCss/ListPlayerStyle.css';
 function ListPlayers() {
     const [players, setPlayers] = useState<PlayersItem[]>();
     const [playersInTable, setPlayersInTable] = useState<PlayersItem[]>();

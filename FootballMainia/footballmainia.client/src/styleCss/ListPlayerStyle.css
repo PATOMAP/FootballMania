@@ -1,0 +1,6 @@
+.form-size {
+    width: 150px;
+    height: 38px; /* dopasowane np. do Bootstrap input height */
+    padding: 6px 12px;
+    min-width: 100%;
+}
