@@ -32,5 +32,27 @@ namespace FootballMainia.Server.Controllers
 
             return Ok("Zapisano pomyślnie");
         }
+        [HttpPost("addPlayer")]
+        public IActionResult AddPlayer([FromBody] PlayersItem player)
+        {
+            if (player == null)
+                return BadRequest("Brak danych");
+
+            _db.Players.Add(player);//aktualizacja danych
+            _db.SaveChanges();//zapisanie informacji w bazie danych
+
+            return Ok("Dodano pomyślnie");
+        }
+        [HttpPost("deletePlayer")]
+        public IActionResult DeletePlayer([FromBody] PlayersItem player)
+        {
+            if (player == null)
+                return BadRequest("Brak danych");
+
+            _db.Players.Remove(player);//aktualizacja danych
+            _db.SaveChanges();//zapisanie informacji w bazie danych
+
+            return Ok("Usunięto pomyślnie");
+        }
     }
 }

@@ -9,7 +9,7 @@ import { Edit,Thrash }  from '../icons/EditIcons'
 import AddItemPlayer from './ListPlayersComponents/AddItemToPlayer'
 import '../styleCss/ListPlayerStyle.css';
 function ListPlayers() {
-    const [players, setPlayers] = useState<PlayersItem[]>();
+    const [players, setPlayers] = useState<PlayersItem[]>([]);
     const [playersInTable, setPlayersInTable] = useState<PlayersItem[]>();
     const [information, setInformation] = useState<InformationType>({
         position: [],
@@ -58,6 +58,13 @@ function ListPlayers() {
             }
         }
     }
+    function deletePlayerB(key: number)
+    {
+        const playerToDelete = playersInTable?.find(p => p.player_id === key);
+        if (playerToDelete === undefined) return;
+        deletePlayer(playerToDelete);
+        console.log(playerToDelete);
+    }
     function handleFieldChange(field: keyof PlayersItem, value: string | number) {
         setEditingPlayerData(p =>
             p ? { ...p, [field]: value } : null
@@ -80,9 +87,9 @@ function ListPlayers() {
     }, [players]);
     useEffect(() => {
         filterPlayers();
-    }, [playersFilter]);
+    }, [playersFilter, players]);
 
-    const contents1 = players === undefined ? <div></div> : <div><AddItemPlayer source={information}/><ElementsToSerach setPlayers={setPlayersFilter} InformationPlayers={information} playersFilter={playersFilter} /></div>;
+    const contents1 = players === undefined ? <div></div> : <div><AddItemPlayer source={information} players={players} setPlayers={setPlayers} /><ElementsToSerach setPlayers={setPlayersFilter} InformationPlayers={information} playersFilter={playersFilter} /></div>;
 
 
     const contents = players === undefined || playersInTable === undefined
@@ -209,7 +216,7 @@ function ListPlayers() {
                                 <Button className="py-1 px-3" onClick={() => toggleEdit(player.player_id)}>
                                     {editingRowId === player.player_id ? 'Save' : <Edit />}
                                 </Button>
-                                <Button className="mx-2 py-1 px-3 bg-danger">
+                                <Button onClick={() => deletePlayerB(player.player_id) } className="mx-2 py-1 px-3 bg-danger">
                                     <Thrash />
                                 </Button>
                             </div>
@@ -256,5 +263,24 @@ function ListPlayers() {
         }
     }
 }
+
+async function deletePlayer(player: PlayersItem) {
+    const response = await fetch('playerslist/deletePlayer', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(player),
+    });
+
+    const resultText = await response.text();
+
+    if (!response.ok) {
+        console.error("B³¹d zapisu:", resultText);
+    } else {
+        console.log("Sukces:", resultText);
+    }
+}
+
 
 export default ListPlayers;

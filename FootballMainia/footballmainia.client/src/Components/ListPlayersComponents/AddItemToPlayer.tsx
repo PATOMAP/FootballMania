@@ -1,24 +1,27 @@
-import { InformationType } from '../Interfaces/FilterPlayers'
+import { InformationType,PlayerCreateDto } from '../Interfaces/FilterPlayers'
 import PlayersItem from '../Interfaces/PlayersItem';
 import React, { useState } from 'react';
 import { Button } from 'react-bootstrap';
 import Collapse from 'react-bootstrap/Collapse';
 type InformationPlayer = {
     source: InformationType;
-    /*setPlayers: React.Dispatch<React.SetStateAction<PlayersItem[]>>;*/
+    setPlayers: React.Dispatch<React.SetStateAction<PlayersItem[]>> | undefined;
+    players: PlayersItem[] | undefined;
 }
 
-const AddPlayerToDatabase: React.FC<InformationPlayer> = ({ source }) => {
+const AddPlayerToDatabase: React.FC<InformationPlayer> = ({ source, setPlayers, players }) => {
     const [playersAdd, setPlayerAdd] = useState<PlayersItem>({
-        age: 0, current_club: '', full_name: '', height: '', market_value: '', nationality: '', number: 0, player_id: 0, position:'',previous_club:''
+        age: 0, current_club: '', full_name: '', height: '', market_value: '', nationality: '', number: 0, player_id:0, position: '', previous_club: ''
     });
     function handleFieldChange(field: keyof PlayersItem, value: string | number) {
         setPlayerAdd(p =>  ({ ...p, [field]: value }));
     }
     const [open, setOpen] = useState(false);
     async function addPlayer() {
+        if (players === undefined || setPlayers === undefined) return;
         const { number, full_name, position, age, nationality, current_club, previous_club, market_value, height } = playersAdd;
-
+        playersAdd.player_id = players.length + 1; 
+        const itemToAdd = mapToCreateDto(playersAdd);
         if (
             number === 0 ||
             full_name.trim() === '' ||
@@ -33,15 +36,40 @@ const AddPlayerToDatabase: React.FC<InformationPlayer> = ({ source }) => {
             alert('Please fill in all fields before adding the player.');
             return;
         }
+        if (players.some(p => p.number === playersAdd.number)) {
+            alert('Player with this number already exists.');
+            return;
 
-        console.log('Player to be added:', playersAdd);
-        // await fetch('playerslist/addPlayer', {
-        //    method: 'POST',
-        //    headers: {
-        //        'Content-Type': 'application/json',
-        //    },
-        //     body: JSON.stringify(playersAdd),
-        //});
+        }
+        setPlayers(p=>[...p, playersAdd]); // Add the new player to the list)
+        const response= await fetch('playerslist/addPlayer', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(itemToAdd),
+         });
+        const resultText = await response.text();
+
+        if (!response.ok) {
+            console.error("B³¹d zapisu:", resultText);
+        } else {
+            console.log("Sukces:", resultText);
+        }
+    }
+
+    function mapToCreateDto(player: PlayersItem): PlayerCreateDto {
+        return {
+            number: player.number,
+            full_name: player.full_name,
+            position: player.position,
+            age: player.age,
+            nationality: player.nationality,
+            current_club: player.current_club,
+            previous_club: player.previous_club,
+            market_value: player.market_value,
+            height: player.height
+        };
     }
     return (
         <div className="mt-2">
