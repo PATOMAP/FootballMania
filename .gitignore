@@ -1,0 +1,12 @@
+# .NET
+**/bin/
+**/obj/
+
+# React
+node_modules/
+build/
+dist/
+
+# Sensitive files
+**/appsettings.json
+.env

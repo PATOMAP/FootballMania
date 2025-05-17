@@ -1,0 +1,495 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\ProjectFootball\\FootballMainia\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F41DFCDA-EBC7-4F89-9CEC-7A93D720595A}|FootballMainia.Server\\FootballMainia.Server.csproj|d:\\projectfootball\\footballmainia\\footballmainia.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F41DFCDA-EBC7-4F89-9CEC-7A93D720595A}|FootballMainia.Server\\FootballMainia.Server.csproj|solutionrelative:footballmainia.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F41DFCDA-EBC7-4F89-9CEC-7A93D720595A}|FootballMainia.Server\\FootballMainia.Server.csproj|d:\\projectfootball\\footballmainia\\footballmainia.server\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F41DFCDA-EBC7-4F89-9CEC-7A93D720595A}|FootballMainia.Server\\FootballMainia.Server.csproj|solutionrelative:footballmainia.server\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F41DFCDA-EBC7-4F89-9CEC-7A93D720595A}|FootballMainia.Server\\FootballMainia.Server.csproj|d:\\projectfootball\\footballmainia\\footballmainia.server\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F41DFCDA-EBC7-4F89-9CEC-7A93D720595A}|FootballMainia.Server\\FootballMainia.Server.csproj|solutionrelative:footballmainia.server\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC67F8AE-5CC3-4E15-AFD0-DD6C48B114BD}|FotballMania.DataAccess\\FootballMania.DataAccess.csproj|d:\\projectfootball\\footballmainia\\fotballmania.dataaccess\\apiclass\\mateches\\livematches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC67F8AE-5CC3-4E15-AFD0-DD6C48B114BD}|FotballMania.DataAccess\\FootballMania.DataAccess.csproj|solutionrelative:fotballmania.dataaccess\\apiclass\\mateches\\livematches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC67F8AE-5CC3-4E15-AFD0-DD6C48B114BD}|FotballMania.DataAccess\\FootballMania.DataAccess.csproj|d:\\projectfootball\\footballmainia\\fotballmania.dataaccess\\repository\\jsonclassdeserialize\\mateches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC67F8AE-5CC3-4E15-AFD0-DD6C48B114BD}|FotballMania.DataAccess\\FootballMania.DataAccess.csproj|solutionrelative:fotballmania.dataaccess\\repository\\jsonclassdeserialize\\mateches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC67F8AE-5CC3-4E15-AFD0-DD6C48B114BD}|FotballMania.DataAccess\\FootballMania.DataAccess.csproj|d:\\projectfootball\\footballmainia\\fotballmania.dataaccess\\apiclass\\mateches\\ilivematches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC67F8AE-5CC3-4E15-AFD0-DD6C48B114BD}|FotballMania.DataAccess\\FootballMania.DataAccess.csproj|solutionrelative:fotballmania.dataaccess\\apiclass\\mateches\\ilivematches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC67F8AE-5CC3-4E15-AFD0-DD6C48B114BD}|FotballMania.DataAccess\\FootballMania.DataAccess.csproj|d:\\projectfootball\\footballmainia\\fotballmania.dataaccess\\repository\\irepository\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC67F8AE-5CC3-4E15-AFD0-DD6C48B114BD}|FotballMania.DataAccess\\FootballMania.DataAccess.csproj|solutionrelative:fotballmania.dataaccess\\repository\\irepository\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC67F8AE-5CC3-4E15-AFD0-DD6C48B114BD}|FotballMania.DataAccess\\FootballMania.DataAccess.csproj|d:\\projectfootball\\footballmainia\\fotballmania.dataaccess\\apiclass\\mateches\\match.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC67F8AE-5CC3-4E15-AFD0-DD6C48B114BD}|FotballMania.DataAccess\\FootballMania.DataAccess.csproj|solutionrelative:fotballmania.dataaccess\\apiclass\\mateches\\match.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC67F8AE-5CC3-4E15-AFD0-DD6C48B114BD}|FotballMania.DataAccess\\FootballMania.DataAccess.csproj|d:\\projectfootball\\footballmainia\\fotballmania.dataaccess\\repository\\playersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC67F8AE-5CC3-4E15-AFD0-DD6C48B114BD}|FotballMania.DataAccess\\FootballMania.DataAccess.csproj|solutionrelative:fotballmania.dataaccess\\repository\\playersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC67F8AE-5CC3-4E15-AFD0-DD6C48B114BD}|FotballMania.DataAccess\\FootballMania.DataAccess.csproj|d:\\projectfootball\\footballmainia\\fotballmania.dataaccess\\apiclass\\mateches\\league.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC67F8AE-5CC3-4E15-AFD0-DD6C48B114BD}|FotballMania.DataAccess\\FootballMania.DataAccess.csproj|solutionrelative:fotballmania.dataaccess\\apiclass\\mateches\\league.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC67F8AE-5CC3-4E15-AFD0-DD6C48B114BD}|FotballMania.DataAccess\\FootballMania.DataAccess.csproj|d:\\projectfootball\\footballmainia\\fotballmania.dataaccess\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC67F8AE-5CC3-4E15-AFD0-DD6C48B114BD}|FotballMania.DataAccess\\FootballMania.DataAccess.csproj|solutionrelative:fotballmania.dataaccess\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC67F8AE-5CC3-4E15-AFD0-DD6C48B114BD}|FotballMania.DataAccess\\FootballMania.DataAccess.csproj|d:\\projectfootball\\footballmainia\\fotballmania.dataaccess\\repository\\irepository\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC67F8AE-5CC3-4E15-AFD0-DD6C48B114BD}|FotballMania.DataAccess\\FootballMania.DataAccess.csproj|solutionrelative:fotballmania.dataaccess\\repository\\irepository\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC67F8AE-5CC3-4E15-AFD0-DD6C48B114BD}|FotballMania.DataAccess\\FootballMania.DataAccess.csproj|d:\\projectfootball\\footballmainia\\fotballmania.dataaccess\\repository\\irepository\\iplayersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC67F8AE-5CC3-4E15-AFD0-DD6C48B114BD}|FotballMania.DataAccess\\FootballMania.DataAccess.csproj|solutionrelative:fotballmania.dataaccess\\repository\\irepository\\iplayersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC67F8AE-5CC3-4E15-AFD0-DD6C48B114BD}|FotballMania.DataAccess\\FootballMania.DataAccess.csproj|d:\\projectfootball\\footballmainia\\fotballmania.dataaccess\\apiclass\\iapiservice\\ifootballdataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC67F8AE-5CC3-4E15-AFD0-DD6C48B114BD}|FotballMania.DataAccess\\FootballMania.DataAccess.csproj|solutionrelative:fotballmania.dataaccess\\apiclass\\iapiservice\\ifootballdataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC67F8AE-5CC3-4E15-AFD0-DD6C48B114BD}|FotballMania.DataAccess\\FootballMania.DataAccess.csproj|d:\\projectfootball\\footballmainia\\fotballmania.dataaccess\\repository\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC67F8AE-5CC3-4E15-AFD0-DD6C48B114BD}|FotballMania.DataAccess\\FootballMania.DataAccess.csproj|solutionrelative:fotballmania.dataaccess\\repository\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F41DFCDA-EBC7-4F89-9CEC-7A93D720595A}|FootballMainia.Server\\FootballMainia.Server.csproj|d:\\projectfootball\\footballmainia\\footballmainia.server\\controllers\\playerslistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F41DFCDA-EBC7-4F89-9CEC-7A93D720595A}|FootballMainia.Server\\FootballMainia.Server.csproj|solutionrelative:footballmainia.server\\controllers\\playerslistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC67F8AE-5CC3-4E15-AFD0-DD6C48B114BD}|FotballMania.DataAccess\\FootballMania.DataAccess.csproj|d:\\projectfootball\\footballmainia\\fotballmania.dataaccess\\apiclass\\footballdataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC67F8AE-5CC3-4E15-AFD0-DD6C48B114BD}|FotballMania.DataAccess\\FootballMania.DataAccess.csproj|solutionrelative:fotballmania.dataaccess\\apiclass\\footballdataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73B9DDB1-DEC0-4B40-AB23-09F41964355A}|footballmainia.client\\footballmainia.client.esproj|d:\\projectfootball\\footballmainia\\footballmainia.client\\src\\components\\home.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{73B9DDB1-DEC0-4B40-AB23-09F41964355A}|footballmainia.client\\footballmainia.client.esproj|solutionrelative:footballmainia.client\\src\\components\\home.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73B9DDB1-DEC0-4B40-AB23-09F41964355A}|footballmainia.client\\footballmainia.client.esproj|d:\\projectfootball\\footballmainia\\footballmainia.client\\src\\app.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{73B9DDB1-DEC0-4B40-AB23-09F41964355A}|footballmainia.client\\footballmainia.client.esproj|solutionrelative:footballmainia.client\\src\\app.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F41DFCDA-EBC7-4F89-9CEC-7A93D720595A}|FootballMainia.Server\\FootballMainia.Server.csproj|d:\\projectfootball\\footballmainia\\footballmainia.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F41DFCDA-EBC7-4F89-9CEC-7A93D720595A}|FootballMainia.Server\\FootballMainia.Server.csproj|solutionrelative:footballmainia.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73B9DDB1-DEC0-4B40-AB23-09F41964355A}|footballmainia.client\\footballmainia.client.esproj|d:\\projectfootball\\footballmainia\\footballmainia.client\\src\\components\\navigation\\navbarcomponent.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{73B9DDB1-DEC0-4B40-AB23-09F41964355A}|footballmainia.client\\footballmainia.client.esproj|solutionrelative:footballmainia.client\\src\\components\\navigation\\navbarcomponent.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73B9DDB1-DEC0-4B40-AB23-09F41964355A}|footballmainia.client\\footballmainia.client.esproj|d:\\projectfootball\\footballmainia\\footballmainia.client\\src\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{73B9DDB1-DEC0-4B40-AB23-09F41964355A}|footballmainia.client\\footballmainia.client.esproj|solutionrelative:footballmainia.client\\src\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73B9DDB1-DEC0-4B40-AB23-09F41964355A}|footballmainia.client\\footballmainia.client.esproj|d:\\projectfootball\\footballmainia\\footballmainia.client\\src\\components\\weatherforecast.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{73B9DDB1-DEC0-4B40-AB23-09F41964355A}|footballmainia.client\\footballmainia.client.esproj|solutionrelative:footballmainia.client\\src\\components\\weatherforecast.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73B9DDB1-DEC0-4B40-AB23-09F41964355A}|footballmainia.client\\footballmainia.client.esproj|d:\\projectfootball\\footballmainia\\footballmainia.client\\vite.config.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{73B9DDB1-DEC0-4B40-AB23-09F41964355A}|footballmainia.client\\footballmainia.client.esproj|solutionrelative:footballmainia.client\\vite.config.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73B9DDB1-DEC0-4B40-AB23-09F41964355A}|footballmainia.client\\footballmainia.client.esproj|d:\\projectfootball\\footballmainia\\footballmainia.client\\src\\vite-env.d.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{73B9DDB1-DEC0-4B40-AB23-09F41964355A}|footballmainia.client\\footballmainia.client.esproj|solutionrelative:footballmainia.client\\src\\vite-env.d.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73B9DDB1-DEC0-4B40-AB23-09F41964355A}|footballmainia.client\\footballmainia.client.esproj|d:\\projectfootball\\footballmainia\\footballmainia.client\\src\\main.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{73B9DDB1-DEC0-4B40-AB23-09F41964355A}|footballmainia.client\\footballmainia.client.esproj|solutionrelative:footballmainia.client\\src\\main.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 92,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "D:\\ProjectFootball\\FootballMainia\\FootballMainia.Server\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "FootballMainia.Server\\appsettings.Development.json",
+              "ToolTip": "D:\\ProjectFootball\\FootballMainia\\FootballMainia.Server\\appsettings.Development.json",
+              "RelativeToolTip": "FootballMainia.Server\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+<<<<<<< HEAD
+              "WhenOpened": "2025-05-16T21:29:43.178Z"
+=======
+              "WhenOpened": "2025-05-16T21:29:43.178Z",
+              "EditorCaption": ""
+>>>>>>> 11d96e0e16a33aefb6142b5887cd432906ad11e8
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\ProjectFootball\\FootballMainia\\FootballMainia.Server\\appsettings.json",
+              "RelativeDocumentMoniker": "FootballMainia.Server\\appsettings.json",
+              "ToolTip": "D:\\ProjectFootball\\FootballMainia\\FootballMainia.Server\\appsettings.json",
+              "RelativeToolTip": "FootballMainia.Server\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-16T21:29:39.462Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "League.cs",
+              "DocumentMoniker": "D:\\ProjectFootball\\FootballMainia\\FotballMania.DataAccess\\APIClass\\Mateches\\League.cs",
+              "RelativeDocumentMoniker": "FotballMania.DataAccess\\APIClass\\Mateches\\League.cs",
+              "ToolTip": "D:\\ProjectFootball\\FootballMainia\\FotballMania.DataAccess\\APIClass\\Mateches\\League.cs",
+              "RelativeToolTip": "FotballMania.DataAccess\\APIClass\\Mateches\\League.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAuwB0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T20:36:47.457Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ILiveMatches.cs",
+              "DocumentMoniker": "D:\\ProjectFootball\\FootballMainia\\FotballMania.DataAccess\\APIClass\\Mateches\\ILiveMatches.cs",
+              "RelativeDocumentMoniker": "FotballMania.DataAccess\\APIClass\\Mateches\\ILiveMatches.cs",
+              "ToolTip": "D:\\ProjectFootball\\FootballMainia\\FotballMania.DataAccess\\APIClass\\Mateches\\ILiveMatches.cs",
+              "RelativeToolTip": "FotballMania.DataAccess\\APIClass\\Mateches\\ILiveMatches.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T20:06:31.595Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "D:\\ProjectFootball\\FootballMainia\\FotballMania.DataAccess\\Repository\\IRepository\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "FotballMania.DataAccess\\Repository\\IRepository\\IUnitOfWork.cs",
+              "ToolTip": "D:\\ProjectFootball\\FootballMainia\\FotballMania.DataAccess\\Repository\\IRepository\\IUnitOfWork.cs",
+              "RelativeToolTip": "FotballMania.DataAccess\\Repository\\IRepository\\IUnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T19:10:47.984Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PlayersRepository.cs",
+              "DocumentMoniker": "D:\\ProjectFootball\\FootballMainia\\FotballMania.DataAccess\\Repository\\PlayersRepository.cs",
+              "RelativeDocumentMoniker": "FotballMania.DataAccess\\Repository\\PlayersRepository.cs",
+              "ToolTip": "D:\\ProjectFootball\\FootballMainia\\FotballMania.DataAccess\\Repository\\PlayersRepository.cs",
+              "RelativeToolTip": "FotballMania.DataAccess\\Repository\\PlayersRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T19:10:42.717Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Match.cs",
+              "DocumentMoniker": "D:\\ProjectFootball\\FootballMainia\\FotballMania.DataAccess\\APIClass\\Mateches\\Match.cs",
+              "RelativeDocumentMoniker": "FotballMania.DataAccess\\APIClass\\Mateches\\Match.cs",
+              "ToolTip": "D:\\ProjectFootball\\FootballMainia\\FotballMania.DataAccess\\APIClass\\Mateches\\Match.cs",
+              "RelativeToolTip": "FotballMania.DataAccess\\APIClass\\Mateches\\Match.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T19:08:06.382Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LiveMatches.cs",
+              "DocumentMoniker": "D:\\ProjectFootball\\FootballMainia\\FotballMania.DataAccess\\APIClass\\Mateches\\LiveMatches.cs",
+              "RelativeDocumentMoniker": "FotballMania.DataAccess\\APIClass\\Mateches\\LiveMatches.cs",
+              "ToolTip": "D:\\ProjectFootball\\FootballMainia\\FotballMania.DataAccess\\APIClass\\Mateches\\LiveMatches.cs",
+              "RelativeToolTip": "FotballMania.DataAccess\\APIClass\\Mateches\\LiveMatches.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAAAC4AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T19:02:14.786Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "D:\\ProjectFootball\\FootballMainia\\FotballMania.DataAccess\\Repository\\Repository.cs",
+              "RelativeDocumentMoniker": "FotballMania.DataAccess\\Repository\\Repository.cs",
+              "ToolTip": "D:\\ProjectFootball\\FootballMainia\\FotballMania.DataAccess\\Repository\\Repository.cs",
+              "RelativeToolTip": "FotballMania.DataAccess\\Repository\\Repository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T12:48:09.795Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Mateches.cs",
+              "DocumentMoniker": "D:\\ProjectFootball\\FootballMainia\\FotballMania.DataAccess\\Repository\\JsonClassDeserialize\\Mateches.cs",
+              "RelativeDocumentMoniker": "FotballMania.DataAccess\\Repository\\JsonClassDeserialize\\Mateches.cs",
+              "ToolTip": "D:\\ProjectFootball\\FootballMainia\\FotballMania.DataAccess\\Repository\\JsonClassDeserialize\\Mateches.cs",
+              "RelativeToolTip": "FotballMania.DataAccess\\Repository\\JsonClassDeserialize\\Mateches.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAIA8wCEAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T12:51:53.165Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\ProjectFootball\\FootballMainia\\FootballMainia.Server\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "FootballMainia.Server\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\ProjectFootball\\FootballMainia\\FootballMainia.Server\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "FootballMainia.Server\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAIwBoAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+<<<<<<< HEAD
+              "WhenOpened": "2025-05-16T12:47:58.053Z"
+=======
+              "WhenOpened": "2025-05-16T12:47:58.053Z",
+              "EditorCaption": ""
+>>>>>>> 11d96e0e16a33aefb6142b5887cd432906ad11e8
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Home.tsx",
+              "DocumentMoniker": "D:\\ProjectFootball\\FootballMainia\\footballmainia.client\\src\\Components\\Home.tsx",
+              "RelativeDocumentMoniker": "footballmainia.client\\src\\Components\\Home.tsx",
+              "ToolTip": "D:\\ProjectFootball\\FootballMainia\\footballmainia.client\\src\\Components\\Home.tsx",
+              "RelativeToolTip": "footballmainia.client\\src\\Components\\Home.tsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-05-16T13:07:34.587Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "D:\\ProjectFootball\\FootballMainia\\FotballMania.DataAccess\\Repository\\IRepository\\IRepository.cs",
+              "RelativeDocumentMoniker": "FotballMania.DataAccess\\Repository\\IRepository\\IRepository.cs",
+              "ToolTip": "D:\\ProjectFootball\\FootballMainia\\FotballMania.DataAccess\\Repository\\IRepository\\IRepository.cs",
+              "RelativeToolTip": "FotballMania.DataAccess\\Repository\\IRepository\\IRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T19:10:47.294Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IPlayersRepository.cs",
+              "DocumentMoniker": "D:\\ProjectFootball\\FootballMainia\\FotballMania.DataAccess\\Repository\\IRepository\\IPlayersRepository.cs",
+              "RelativeDocumentMoniker": "FotballMania.DataAccess\\Repository\\IRepository\\IPlayersRepository.cs",
+              "ToolTip": "D:\\ProjectFootball\\FootballMainia\\FotballMania.DataAccess\\Repository\\IRepository\\IPlayersRepository.cs",
+              "RelativeToolTip": "FotballMania.DataAccess\\Repository\\IRepository\\IPlayersRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T19:10:48.806Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IFootballDataService.cs",
+              "DocumentMoniker": "D:\\ProjectFootball\\FootballMainia\\FotballMania.DataAccess\\APIClass\\IApiService\\IFootballDataService.cs",
+              "RelativeDocumentMoniker": "FotballMania.DataAccess\\APIClass\\IApiService\\IFootballDataService.cs",
+              "ToolTip": "D:\\ProjectFootball\\FootballMainia\\FotballMania.DataAccess\\APIClass\\IApiService\\IFootballDataService.cs",
+              "RelativeToolTip": "FotballMania.DataAccess\\APIClass\\IApiService\\IFootballDataService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T19:11:56.197Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "vite-env.d.ts",
+              "DocumentMoniker": "D:\\ProjectFootball\\FootballMainia\\footballmainia.client\\src\\vite-env.d.ts",
+              "RelativeDocumentMoniker": "footballmainia.client\\src\\vite-env.d.ts",
+              "ToolTip": "D:\\ProjectFootball\\FootballMainia\\footballmainia.client\\src\\vite-env.d.ts",
+              "RelativeToolTip": "footballmainia.client\\src\\vite-env.d.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-05-16T13:27:47.873Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "FootballDataService.cs",
+              "DocumentMoniker": "D:\\ProjectFootball\\FootballMainia\\FotballMania.DataAccess\\APIClass\\FootballDataService.cs",
+              "RelativeDocumentMoniker": "FotballMania.DataAccess\\APIClass\\FootballDataService.cs",
+              "ToolTip": "D:\\ProjectFootball\\FootballMainia\\FotballMania.DataAccess\\APIClass\\FootballDataService.cs",
+              "RelativeToolTip": "FotballMania.DataAccess\\APIClass\\FootballDataService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAIBJwBYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T12:56:53.505Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "D:\\ProjectFootball\\FootballMainia\\FotballMania.DataAccess\\Repository\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "FotballMania.DataAccess\\Repository\\UnitOfWork.cs",
+              "ToolTip": "D:\\ProjectFootball\\FootballMainia\\FotballMania.DataAccess\\Repository\\UnitOfWork.cs",
+              "RelativeToolTip": "FotballMania.DataAccess\\Repository\\UnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAwwAsAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T12:53:02.435Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "main.tsx",
+              "DocumentMoniker": "D:\\ProjectFootball\\FootballMainia\\footballmainia.client\\src\\main.tsx",
+              "RelativeDocumentMoniker": "footballmainia.client\\src\\main.tsx",
+              "ToolTip": "D:\\ProjectFootball\\FootballMainia\\footballmainia.client\\src\\main.tsx",
+              "RelativeToolTip": "footballmainia.client\\src\\main.tsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-05-16T13:27:49.802Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "App.tsx",
+              "DocumentMoniker": "D:\\ProjectFootball\\FootballMainia\\footballmainia.client\\src\\App.tsx",
+              "RelativeDocumentMoniker": "footballmainia.client\\src\\App.tsx",
+              "ToolTip": "D:\\ProjectFootball\\FootballMainia\\footballmainia.client\\src\\App.tsx",
+              "RelativeToolTip": "footballmainia.client\\src\\App.tsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-05-16T13:42:38.199Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "index.css",
+              "DocumentMoniker": "D:\\ProjectFootball\\FootballMainia\\footballmainia.client\\src\\index.css",
+              "RelativeDocumentMoniker": "footballmainia.client\\src\\index.css",
+              "ToolTip": "D:\\ProjectFootball\\FootballMainia\\footballmainia.client\\src\\index.css",
+              "RelativeToolTip": "footballmainia.client\\src\\index.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-05-16T13:27:50.937Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "PlayersListController.cs",
+              "DocumentMoniker": "D:\\ProjectFootball\\FootballMainia\\FootballMainia.Server\\Controllers\\PlayersListController.cs",
+              "RelativeDocumentMoniker": "FootballMainia.Server\\Controllers\\PlayersListController.cs",
+              "ToolTip": "D:\\ProjectFootball\\FootballMainia\\FootballMainia.Server\\Controllers\\PlayersListController.cs",
+              "RelativeToolTip": "FootballMainia.Server\\Controllers\\PlayersListController.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAcwBgAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T16:50:13.674Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "NavbarComponent.tsx",
+              "DocumentMoniker": "D:\\ProjectFootball\\FootballMainia\\footballmainia.client\\src\\Components\\Navigation\\NavbarComponent.tsx",
+              "RelativeDocumentMoniker": "footballmainia.client\\src\\Components\\Navigation\\NavbarComponent.tsx",
+              "ToolTip": "D:\\ProjectFootball\\FootballMainia\\footballmainia.client\\src\\Components\\Navigation\\NavbarComponent.tsx",
+              "RelativeToolTip": "footballmainia.client\\src\\Components\\Navigation\\NavbarComponent.tsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-05-16T13:28:10.374Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\ProjectFootball\\FootballMainia\\FootballMainia.Server\\Program.cs",
+              "RelativeDocumentMoniker": "FootballMainia.Server\\Program.cs",
+              "ToolTip": "D:\\ProjectFootball\\FootballMainia\\FootballMainia.Server\\Program.cs",
+              "RelativeToolTip": "FootballMainia.Server\\Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAgwCMAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T13:47:25.85Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "vite.config.ts",
+              "DocumentMoniker": "D:\\ProjectFootball\\FootballMainia\\footballmainia.client\\vite.config.ts",
+              "RelativeDocumentMoniker": "footballmainia.client\\vite.config.ts",
+              "ToolTip": "D:\\ProjectFootball\\FootballMainia\\footballmainia.client\\vite.config.ts",
+              "RelativeToolTip": "footballmainia.client\\vite.config.ts",
+              "ViewState": "AgIAACYAAAAAAAAAAADwvy0AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-05-16T12:46:47.117Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "WeatherForecast.tsx",
+              "DocumentMoniker": "D:\\ProjectFootball\\FootballMainia\\footballmainia.client\\src\\Components\\WeatherForecast.tsx",
+              "RelativeDocumentMoniker": "footballmainia.client\\src\\Components\\WeatherForecast.tsx",
+              "ToolTip": "D:\\ProjectFootball\\FootballMainia\\footballmainia.client\\src\\Components\\WeatherForecast.tsx",
+              "RelativeToolTip": "footballmainia.client\\src\\Components\\WeatherForecast.tsx",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAsAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-05-16T13:41:30.077Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 115,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
