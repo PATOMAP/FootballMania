@@ -37,8 +37,8 @@ namespace FootballMania.DataAccess.APIClass.Mateches
                 Match match1 = new Match();
                 match1.Team1 = match.HomeTeam.Name;
                 match1.Team2 = match.AwayTeam.Name;
-                match1.Team1Img = match.HomeTeam.Tla;
-                match1.Team2Img = match.AwayTeam.Tla;
+                match1.Team1Img = match.HomeTeam.Crest;
+                match1.Team2Img = match.AwayTeam.Crest;
                 match1.Result = match.Score.FullTime.Home + ":" + match.Score.FullTime.Away;
                 match1.Date = match.UtcDate;
                 match1.Status = match.Status;

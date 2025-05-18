@@ -24,7 +24,7 @@ namespace FootballMainia.Server.Controllers
             MatchesInfo data = JsonSerializer.Deserialize<MatchesInfo>(json, options);
             LiveMatches liveMatches = new LiveMatches(data.Matches);
             var allMatches = liveMatches.GetAll();
-            return Ok(data.Matches);
+            return Ok(allMatches);
         }
     }
 }
