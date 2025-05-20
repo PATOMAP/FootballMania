@@ -35,6 +35,7 @@ namespace FootballMania.DataAccess.APIClass.Mateches
                     league.Matches = new List<Match>();
                 }
                 Match match1 = new Match();
+                match1.Id = match.Id;
                 match1.Team1 = match.HomeTeam.Name;
                 match1.Team2 = match.AwayTeam.Name;
                 match1.Team1Img = match.HomeTeam.Crest;

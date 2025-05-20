@@ -10,12 +10,14 @@ function Home() {
         const response = await fetch('home/getAllMatches'); // <-- tutaj zmieñ na twój backend endpoint!
         const data: League[] = await response.json();
         setLeagues(data);
-        console.log(data);
 
     }, []);
 
     return (
-        <div className="mt-1"><LeagueBlock leagues={leagues} /></div>
+        <div>
+            <div className="d-flex justify-content-center align-items-center"><LeagueBlock leagues={leagues} /></div>
+        </div>
+        
         
     );
 

@@ -18,7 +18,7 @@ namespace FootballMania.DataAccess.APIClass
 
         public async Task<string> GetCompetitionsAsync()
         {
-            var response = await _httpClient.GetAsync("https://api.football-data.org/v4/matches");
+            var response = await _httpClient.GetAsync("https://api.football-data.org/v4/matches?dateFrom=2025-05-18&dateTo=2025-05-19");
             response.EnsureSuccessStatusCode();
             return await response.Content.ReadAsStringAsync();
         }
