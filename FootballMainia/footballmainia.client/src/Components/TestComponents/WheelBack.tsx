@@ -1,123 +1,144 @@
-import React, { useState, useMemo, useEffect } from 'react';
 
-
+import React, { useEffect, useRef, useState } from 'react';
+import '../styleCss/WheelStyle.css';
 
 const Wheel: React.FC = () => {
-    const [segmentsCount, setSegmentsCount] = useState<number>(6);
-    const [rotation, setRotation] = useState<number>(0);
-    const [winner, setWinner] = useState<number | null>(null);
-    const [segments, setSegments] = useState<string[]>([]);
+    const [text, setText] = useState(`cat
+dog
+cow
+duck
+sheep
+goat
+bird
+neko
+chicken`);
+    const canvasRef = useRef<HTMLCanvasElement>(null);
+    const pauseRef = useRef(false);
+    const currentDegRef = useRef(0);
+    const speedRef = useRef(0);
+    const maxRotationRef = useRef(randomRange(360 * 3, 360 * 6));
+    function randomColor(): { r: number; g: number; b: number } {
+        const r = Math.floor(Math.random() * 255);
+        const g = Math.floor(Math.random() * 255);
+        const b = Math.floor(Math.random() * 255);
+        return { r, g, b };
+    }
 
-    useEffect(() => {
-        const colors = ["#000", "#fff", "#ccc"];
-        const newSegments: string[] = [];
+    function toRad(deg: number): number {
+        return deg * (Math.PI / 180.0);
+    }
+    function randomRange(min: number, max: number): number {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+    function drawWheel(items: string[], rotationDeg: number = 0) {
+        const canvas = canvasRef.current;
+        if (!canvas) return;
 
-        for (let i = 0; i < segmentsCount; i++) {
-            if ((i === segmentsCount - 1) && (newSegments[0] === colors[i % 3])) {
-                newSegments.push(colors[i - colors.length + 1]);
-                break;
-            }
-            newSegments.push(colors[i % colors.length]);
+        const ctx = canvas.getContext('2d');
+        if (!ctx) return;
 
+        const width = canvas.width;
+        const height = canvas.height;
+        const centerX = width / 2;
+        const centerY = height / 2;
+        const radius = width / 2;
+
+        const step = 360 / items.length;
+        const colors = items.map(() => randomColor());
+
+        ctx.clearRect(0, 0, width, height);
+        ctx.save();
+        ctx.translate(centerX, centerY);
+        ctx.rotate(toRad(rotationDeg));
+        ctx.translate(-centerX, -centerY);
+
+        let startDeg = 0;
+        for (let i = 0; i < items.length; i++, startDeg += step) {
+            const endDeg = startDeg + step;
+            const color = colors[i];
+            const colorStyle = `rgb(${color.r},${color.g},${color.b})`;
+            // W³aœciwy segment
+            ctx.beginPath();
+            ctx.arc(centerX, centerY, radius - 30, toRad(startDeg), toRad(endDeg));
+            ctx.fillStyle = colorStyle;
+            ctx.lineTo(centerX, centerY);
+            ctx.fill();
+
+            // Tekst
+            ctx.save();
+            ctx.translate(centerX, centerY);
+            ctx.rotate(toRad((startDeg + endDeg) / 2));
+            ctx.textAlign = "center";
+            ctx.fillStyle = (color.r > 150 || color.g > 150 || color.b > 150) ? "#000" : "#fff";
+            ctx.font = "bold 24px serif";
+            ctx.fillText(items[i], 130, 10);
+            ctx.restore();
         }
 
+        ctx.restore();
+    }
 
+    // Funkcje pomocnicze
+    function getPercent(value: number, max: number, min: number): number {
+        return (value - min) / (max - min);
+    }
 
-        setSegments(newSegments);
-    }, [segmentsCount]);
+    function easeOutSine(x: number): number {
+        return Math.sin((x * Math.PI) / 2);
+    }
 
-    const gradient = useMemo(() => {
-        const step = 360 / segmentsCount;
-        return segments
-            .map((color, i) => `${color} ${i * step}deg ${i * step + step}deg`)
-            .join(', ');
-    }, [segments, segmentsCount]);
+    function animate(items: string[]) {
+        if (pauseRef.current) return;
 
-    const spin = () => {
-        const spins = 5;
-        const anglePerSegment = 360 / segmentsCount;
-        const winningIndex = Math.floor(Math.random() * segmentsCount);
-        const finalRotation =
-            360 * spins + (360 - winningIndex * anglePerSegment - anglePerSegment / 2);
-        setRotation(finalRotation);
-        setTimeout(() => setWinner(winningIndex + 1), 3000);
+        const percent = getPercent(currentDegRef.current, maxRotationRef.current, 0);
+        speedRef.current = easeOutSine(percent) * 20;
+
+        if (speedRef.current < 0.01) {
+            speedRef.current = 0;
+            pauseRef.current = true;
+            return;
+        }
+
+        currentDegRef.current += speedRef.current;
+
+        drawWheel(items, currentDegRef.current); // <- przekazanie rotacji
+        requestAnimationFrame(() => animate(items));
+    }
+    const handleSpin = () => {
+        const items = text.split("\n").map(i => i.trim()).filter(Boolean);
+        pauseRef.current = false;
+        currentDegRef.current = 0;
+        speedRef.current = 0;
+        maxRotationRef.current = randomRange(360 * 3, 360 * 6);
+
+        animate(items);
     };
 
+    useEffect(() => {
+        const items = text.split('\n').map(item => item.trim()).filter(Boolean);
+        if (items.length > 0) drawWheel(items);
+    }, [text]);
+
     return (
-        <div className="container text-center mt-4">
-            <h2 className="mb-4">Ko³o Fortuny</h2>
-            <div className="position-relative mx-auto" style={{ width: 300, height: 300 }}>
-                <div
-                    className="rounded-circle border border-dark position-relative overflow-hidden"
-                    style={{
-                        width: '100%',
-                        height: '100%',
-                        background: `conic-gradient(${gradient})`,
-                        transform: `rotate(${rotation}deg)`,
-                        transition: 'transform 3s ease-out',
-                    }}
-                >
-                    {segments.map((_, i) => {
-                        const angle = (360 / segmentsCount) * i + (360 / segmentsCount) / 2;
-
-                        return (
-                            <div
-                                key={i}
-                                style={{
-                                    position: 'absolute',
-                                    top: '50%',
-                                    left: '50%',
-                                    transform: `rotate(${angle}deg) translate(0, -100px) rotate(-${angle}deg)`,
-                                    transformOrigin: 'center',
-                                    pointerEvents: 'none',
-                                }}
-                            >
-                                <div
-                                    style={{
-                                        textAlign: 'center',
-                                        fontSize: '0.8rem',
-                                        fontWeight: 'bold',
-                                        whiteSpace: 'nowrap',
-                                        backgroundColor: 'rgba(255,255,255,0.7)',
-                                        borderRadius: '4px',
-                                        padding: '2px 4px',
-                                    }}
-                                >
-                                    Pole {i + 1}
-                                </div>
-                            </div>
-                        );
-                    })}
-                </div>
-
-                <div
-                    className="position-absolute top-50 start-50 translate-middle text-danger"
-                    style={{ fontSize: '2rem', zIndex: 10 }}
-                >
-                    ??
+        <div>
+            <div className="d-flex justify-content-center position-relative">
+                <canvas ref={canvasRef} width={500} height={500}></canvas>
+                <div className="center-circle">
+                    <div className="triangle"></div>
                 </div>
             </div>
-
-            <button className="btn btn-primary mt-4" onClick={spin}>
-                Zakrêæ!
-            </button>
-
-            <div className="form-group d-flex justify-content-center align-items-center gap-2 mt-3">
-                <label htmlFor="segmentCount" className="me-2 mb-0">
-                    Iloœæ pól:
-                </label>
-                <input
-                    id="segmentCount"
-                    type="number"
-                    min={2}
-                    max={20}
-                    value={segmentsCount}
-                    onChange={(e) => setSegmentsCount(Number(e.target.value))}
-                    className="form-control w-auto"
+            <div className="inputArea">
+                <textarea
+                    className="form-control mt-3"
+                    rows={20}
+                    cols={30}
+                    value={text}
+                    onChange={(e) => setText(e.target.value)}
                 />
             </div>
-
-            {winner && <div className="alert alert-success mt-3">Wygrywa: #{winner}</div>}
+            <button className="btn btn-success mt-3" onClick={() => handleSpin()}>
+                Zakrêæ
+            </button>
         </div>
     );
 };
